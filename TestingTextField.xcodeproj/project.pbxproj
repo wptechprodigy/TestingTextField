@@ -13,19 +13,12 @@
 		04E9E60F274F659F0022D255 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04E9E60D274F659F0022D255 /* Main.storyboard */; };
 		04E9E611274F65A30022D255 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04E9E610274F65A30022D255 /* Assets.xcassets */; };
 		04E9E614274F65A30022D255 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04E9E612274F65A30022D255 /* LaunchScreen.storyboard */; };
-		04E9E61F274F65A40022D255 /* TestingTextFieldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E9E61E274F65A40022D255 /* TestingTextFieldTests.swift */; };
-		04E9E62A274F65A40022D255 /* TestingTextFieldUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E9E629274F65A40022D255 /* TestingTextFieldUITests.swift */; };
+		04E9E61F274F65A40022D255 /* TextFieldViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E9E61E274F65A40022D255 /* TextFieldViewControllerTests.swift */; };
+		04E9E6382752F7840022D255 /* TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E9E6372752F7840022D255 /* TestHelpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		04E9E61B274F65A40022D255 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 04E9E5FC274F659F0022D255 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 04E9E603274F659F0022D255;
-			remoteInfo = TestingTextField;
-		};
-		04E9E626274F65A40022D255 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 04E9E5FC274F659F0022D255 /* Project object */;
 			proxyType = 1;
@@ -44,11 +37,9 @@
 		04E9E613274F65A30022D255 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04E9E615274F65A30022D255 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04E9E61A274F65A40022D255 /* TestingTextFieldTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestingTextFieldTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		04E9E61E274F65A40022D255 /* TestingTextFieldTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingTextFieldTests.swift; sourceTree = "<group>"; };
+		04E9E61E274F65A40022D255 /* TextFieldViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldViewControllerTests.swift; sourceTree = "<group>"; };
 		04E9E620274F65A40022D255 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		04E9E625274F65A40022D255 /* TestingTextFieldUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestingTextFieldUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		04E9E629274F65A40022D255 /* TestingTextFieldUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingTextFieldUITests.swift; sourceTree = "<group>"; };
-		04E9E62B274F65A40022D255 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04E9E6372752F7840022D255 /* TestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestHelpers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,13 +57,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		04E9E622274F65A40022D255 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -81,7 +65,6 @@
 			children = (
 				04E9E606274F659F0022D255 /* TestingTextField */,
 				04E9E61D274F65A40022D255 /* TestingTextFieldTests */,
-				04E9E628274F65A40022D255 /* TestingTextFieldUITests */,
 				04E9E605274F659F0022D255 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -91,7 +74,6 @@
 			children = (
 				04E9E604274F659F0022D255 /* TestingTextField.app */,
 				04E9E61A274F65A40022D255 /* TestingTextFieldTests.xctest */,
-				04E9E625274F65A40022D255 /* TestingTextFieldUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -113,19 +95,11 @@
 		04E9E61D274F65A40022D255 /* TestingTextFieldTests */ = {
 			isa = PBXGroup;
 			children = (
-				04E9E61E274F65A40022D255 /* TestingTextFieldTests.swift */,
+				04E9E61E274F65A40022D255 /* TextFieldViewControllerTests.swift */,
 				04E9E620274F65A40022D255 /* Info.plist */,
+				04E9E6372752F7840022D255 /* TestHelpers.swift */,
 			);
 			path = TestingTextFieldTests;
-			sourceTree = "<group>";
-		};
-		04E9E628274F65A40022D255 /* TestingTextFieldUITests */ = {
-			isa = PBXGroup;
-			children = (
-				04E9E629274F65A40022D255 /* TestingTextFieldUITests.swift */,
-				04E9E62B274F65A40022D255 /* Info.plist */,
-			);
-			path = TestingTextFieldUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,24 +140,6 @@
 			productReference = 04E9E61A274F65A40022D255 /* TestingTextFieldTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		04E9E624274F65A40022D255 /* TestingTextFieldUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 04E9E634274F65A40022D255 /* Build configuration list for PBXNativeTarget "TestingTextFieldUITests" */;
-			buildPhases = (
-				04E9E621274F65A40022D255 /* Sources */,
-				04E9E622274F65A40022D255 /* Frameworks */,
-				04E9E623274F65A40022D255 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				04E9E627274F65A40022D255 /* PBXTargetDependency */,
-			);
-			name = TestingTextFieldUITests;
-			productName = TestingTextFieldUITests;
-			productReference = 04E9E625274F65A40022D255 /* TestingTextFieldUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -197,10 +153,6 @@
 						CreatedOnToolsVersion = 12.5.1;
 					};
 					04E9E619274F65A40022D255 = {
-						CreatedOnToolsVersion = 12.5.1;
-						TestTargetID = 04E9E603274F659F0022D255;
-					};
-					04E9E624274F65A40022D255 = {
 						CreatedOnToolsVersion = 12.5.1;
 						TestTargetID = 04E9E603274F659F0022D255;
 					};
@@ -221,7 +173,6 @@
 			targets = (
 				04E9E603274F659F0022D255 /* TestingTextField */,
 				04E9E619274F65A40022D255 /* TestingTextFieldTests */,
-				04E9E624274F65A40022D255 /* TestingTextFieldUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -238,13 +189,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		04E9E618274F65A40022D255 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		04E9E623274F65A40022D255 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -268,15 +212,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04E9E61F274F65A40022D255 /* TestingTextFieldTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		04E9E621274F65A40022D255 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				04E9E62A274F65A40022D255 /* TestingTextFieldUITests.swift in Sources */,
+				04E9E61F274F65A40022D255 /* TextFieldViewControllerTests.swift in Sources */,
+				04E9E6382752F7840022D255 /* TestHelpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,11 +224,6 @@
 			isa = PBXTargetDependency;
 			target = 04E9E603274F659F0022D255 /* TestingTextField */;
 			targetProxy = 04E9E61B274F65A40022D255 /* PBXContainerItemProxy */;
-		};
-		04E9E627274F65A40022D255 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 04E9E603274F659F0022D255 /* TestingTextField */;
-			targetProxy = 04E9E626274F65A40022D255 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -513,46 +445,6 @@
 			};
 			name = Release;
 		};
-		04E9E635274F65A40022D255 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6ZPB2R3KP8;
-				INFOPLIST_FILE = TestingTextFieldUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.waheedcodes.TestingTextFieldUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = TestingTextField;
-			};
-			name = Debug;
-		};
-		04E9E636274F65A40022D255 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6ZPB2R3KP8;
-				INFOPLIST_FILE = TestingTextFieldUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.waheedcodes.TestingTextFieldUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = TestingTextField;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -579,15 +471,6 @@
 			buildConfigurations = (
 				04E9E632274F65A40022D255 /* Debug */,
 				04E9E633274F65A40022D255 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		04E9E634274F65A40022D255 /* Build configuration list for PBXNativeTarget "TestingTextFieldUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				04E9E635274F65A40022D255 /* Debug */,
-				04E9E636274F65A40022D255 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

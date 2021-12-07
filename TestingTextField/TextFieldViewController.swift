@@ -49,4 +49,8 @@ class TextFieldViewController: UIViewController, UITextFieldDelegate {
         print(">> Username: \(username)")
         print(">> Password: \(password)")
     }
+    
+    deinit {
+        print(">> ViewController.deinit")
+    }
 }
